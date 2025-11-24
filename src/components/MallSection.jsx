@@ -5,7 +5,7 @@ export default function MallSection() {
         {
             id: 1,
             name: "Samsung Galaxy Z Flip7 FE 5G 8GB/128GB",
-            originalPrice: "22.990.000₫",
+            originalprice: "22.990.000₫",
             salePrice: null,
             image: "https://cdn.tgdd.vn/Products/Images/42/338741/samsung-galaxy-z-flip7-fe-white-thumb-600x600.jpg",
             installment: "Nhận ưu đãi đến 6 Triệu",
@@ -15,7 +15,7 @@ export default function MallSection() {
         {
             id: 2,
             name: "OPPO Reno14 5G 12GB/512GB",
-            originalPrice: "16.690.000₫",
+            originalprice: "16.690.000₫",
             salePrice: null,
             image: "https://cdn.tgdd.vn/Products/Images/42/339174/oppo-reno14-5g-green-thumb-600x600.jpg",
             installment: "Quà 300.000₫",
@@ -28,7 +28,7 @@ export default function MallSection() {
         {
             id: 3,
             name: "Asus Vivobook Go 15 E1504FA R5 7520U",
-            originalPrice: "14.190.000₫",
+            originalprice: "14.190.000₫",
             salePrice: "12.090.000₫",
             image: "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/311178/asus-vivobook-go-15-e1504fa-r5-nj776w-140225-100949-251-600x600.jpg",
 
@@ -41,7 +41,7 @@ export default function MallSection() {
         {
             id: 4,
             name: "HP 15 fd0234TU i5 1334U (9Q969PA)",
-            originalPrice: "19.390.000₫",
+            originalprice: "19.390.000₫",
             salePrice: "15.490.000₫",
 
             image: "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/323920/hp-15-fd0234tu-i5-9q969pa-170225-105831-192-600x600.jpg",
@@ -111,12 +111,12 @@ export default function MallSection() {
                                                 {product.salePrice}
                                             </div>
                                             <div className="text-gray-400 line-through text-xs">
-                                                {product.originalPrice}
+                                                {product.originalprice}
                                             </div>
                                         </>
                                     ) : (
                                         <div className="text-red-600 font-bold text-sm">
-                                            {product.originalPrice}
+                                            {product.originalprice}
                                         </div>
                                     )}
                                 </div>

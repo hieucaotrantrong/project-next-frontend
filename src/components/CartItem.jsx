@@ -7,7 +7,7 @@ const formatPrice = (price) => {
     return numPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 };
 
-const CartItem = ({ id, image, title, originalPrice, price, discount }) => {
+const CartItem = ({ id, image, title, originalprice, price, discount }) => {
     const navigate = useNavigate();
 
     const handleBuyNow = () => {
@@ -19,7 +19,7 @@ const CartItem = ({ id, image, title, originalPrice, price, discount }) => {
                 id,
                 image,
                 title,
-                originalPrice,
+                originalprice,
                 price,
                 discount,
                 userAddress: savedAddress
@@ -41,7 +41,7 @@ const CartItem = ({ id, image, title, originalPrice, price, discount }) => {
             <div className="text-xs text-gray-500 mb-2">Quad HD+ (2K+)</div>
 
             <div className="text-red-600 text-base font-bold mb-1">{formatPrice(price)}₫</div>
-            <div className="text-gray-400 line-through text-xs mb-2">{formatPrice(originalPrice)}₫</div>
+            <div className="text-gray-400 line-through text-xs mb-2">{formatPrice(originalprice)}₫</div>
             <div className="text-orange-500 text-xs font-medium mb-2">Quà {discount}.000₫</div>
 
             <div className="flex items-center text-xs text-gray-600 mb-2">

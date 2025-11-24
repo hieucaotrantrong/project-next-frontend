@@ -109,7 +109,7 @@ const ProductDetail = () => {
                                     {formatPrice(product.price)}₫
                                 </p>
                                 <p className="text-gray-500 line-through mb-1">
-                                    {formatPrice(product.originalPrice)}₫
+                                    {formatPrice(product.originalprice)}₫
                                 </p>
                             </div>
 

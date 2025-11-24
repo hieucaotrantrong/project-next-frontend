@@ -71,8 +71,8 @@ const CartPageView = () => {
                                             <div className="flex-1">
                                                 <h4 className="font-medium text-gray-900 mb-2">{item.title}</h4>
                                                 <p className="text-red-600 font-bold text-lg">{formatPrice(item.price)}₫</p>
-                                                {item.originalPrice && (
-                                                    <p className="text-gray-400 line-through text-sm">{formatPrice(item.originalPrice)}₫</p>
+                                                {item.originalprice && (
+                                                    <p className="text-gray-400 line-through text-sm">{formatPrice(item.originalprice)}₫</p>
                                                 )}
                                             </div>
                                             <div className="flex flex-col items-end gap-3">

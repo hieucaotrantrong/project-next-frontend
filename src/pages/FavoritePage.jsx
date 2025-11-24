@@ -75,9 +75,9 @@ const FavoritePage = () => {
                                         <p className="text-red-600 font-bold text-lg">
                                             {formatPrice(item.price)}₫
                                         </p>
-                                        {item.originalPrice && (
+                                        {item.originalprice && (
                                             <p className="text-gray-400 line-through text-sm">
-                                                {formatPrice(item.originalPrice)}₫
+                                                {formatPrice(item.originalprice)}₫
                                             </p>
                                         )}
                                     </div>

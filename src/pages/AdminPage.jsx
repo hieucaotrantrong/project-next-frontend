@@ -18,7 +18,7 @@ const AdminPage = () => {
     // ✅ Form state
     const [form, setForm] = useState({
         title: '',
-        originalPrice: '',
+        originalprice: '',
         price: '',
         discount: '',
         tag: '',
@@ -71,7 +71,7 @@ const AdminPage = () => {
         try {
             const formData = {
                 ...form,
-                originalPrice: form.originalPrice.replace(/\./g, ''),
+                originalprice: form.originalprice.replace(/\./g, ''),
                 price: form.price.replace(/\./g, ''),
             };
 
@@ -87,7 +87,7 @@ const AdminPage = () => {
 
             setForm({
                 title: '',
-                originalPrice: '',
+                originalprice: '',
                 price: '',
                 discount: '',
                 tag: '',
@@ -117,7 +117,7 @@ const AdminPage = () => {
 
     const handleEdit = (product) => {
         setEditingProduct(product);
-        const cleanOriginal = Math.floor(parseFloat(product.originalPrice || 0))
+        const cleanOriginal = Math.floor(parseFloat(product.originalprice || 0))
             .toString()
             .replace(/\B(?=(\d{3})+(?!\d))/g, '.');
         const cleanPrice = Math.floor(parseFloat(product.price || 0))
@@ -126,7 +126,7 @@ const AdminPage = () => {
 
         setForm({
             title: product.title || '',
-            originalPrice: cleanOriginal,
+            originalprice: cleanOriginal,
             price: cleanPrice,
             discount: product.discount || '',
             tag: product.tag || '',
@@ -252,8 +252,8 @@ const AdminPage = () => {
                         <input
                             type="text"
                             placeholder="Giá gốc"
-                            value={form.originalPrice}
-                            onChange={(e) => handlePriceChange('originalPrice', e.target.value)}
+                            value={form.originalprice}
+                            onChange={(e) => handlePriceChange('originalprice', e.target.value)}
                             className="border border-gray-300 rounded px-4 py-2"
                         />
 
@@ -331,7 +331,7 @@ const AdminPage = () => {
                                         </span>
                                     </p>
                                     <p className="text-sm text-gray-500">
-                                        Giá gốc: {formatDisplayPrice(item.originalPrice)}₫
+                                        Giá gốc: {formatDisplayPrice(item.originalprice)}₫
                                     </p>
                                     <p className="text-sm text-gray-500">Giảm: {item.discount}%</p>
                                     <p className="text-sm text-gray-500">
