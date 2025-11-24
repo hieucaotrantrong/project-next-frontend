@@ -42,7 +42,7 @@ const CartItem = ({ id, image, title, originalprice, price, discount }) => {
 
             <div className="text-red-600 text-base font-bold mb-1">{formatPrice(price)}₫</div>
             <div className="text-gray-400 line-through text-xs mb-2">{formatPrice(originalprice)}₫</div>
-            <div className="text-orange-500 text-xs font-medium mb-2">Quà {discount}.000₫</div>
+            <div className="text-orange-500 text-xs font-medium mb-2">Giảm giá {discount}.000₫</div>
 
             <div className="flex items-center text-xs text-gray-600 mb-2">
                 <span className="text-yellow-500">★</span>
